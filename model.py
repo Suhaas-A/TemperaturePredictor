@@ -41,8 +41,6 @@ model.fit(xtr, ytr, epochs=50)
 
 preds = model.predict(xte)
 
-print(mean_squared_error(yte, preds))
-
 plt.plot(xtr, ytr, c='b')
 plt.plot(xte, yte, c='g')
 plt.plot(xte, preds, c='r')
